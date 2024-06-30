@@ -1,0 +1,249 @@
+
+
+body{
+    height: 100vh;
+    
+    background-position: center;
+    background-size: cover;
+    /* background-color: 05336f; couleur bleu comme arriere plan */ 
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "blackchancery";
+    background-image: url("image_generale/maxresdefault_bon.jpg");
+    background-color: #061221;
+    
+    
+    
+}
+
+/* Styles spécifiques pour les écrans de téléphone */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Styles spécifiques pour les écrans de tablette */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Styles spécifiques pour les écrans d'ordinateur */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+ /*ici c'est le logo du tpe*/
+
+
+img{
+    float: right;
+    width: 150px;
+    padding: 5px;
+
+}
+
+/* code de la video  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family:"blackchancery";
+    src: url(blackchancery.ttf);
+}
+/*ici c'est la bare de navigation ou il y'a le menu du site web*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 70px;
+    line-height: 70px;
+    
+    
+
+}
+/*ici c'est le logo nagato tech*/
+.logo{
+    color: #ddc700;
+    margin-left: 100px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 5vh;
+    
+}
+
+.menu {
+    margin-right: 60px;
+    margin-top: 5vh;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #7a7a7a;
+    font-size: 24px;
+
+    
+}
+
+.active{
+    color:#ddc700;
+}
+
+li a:hover{
+    color: #ddc700;
+}
+
+.margin-r {
+    margin-right: 0;
+}
+
+/*c'est ici qui se trouve l imogie d'un informaticien*/
+.search{
+    border: 1px solid #ddc700;
+    border-radius: 20px;
+    height: 40px;
+    margin-right: 120px;
+    margin-top: 5vh;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.btn-search{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  
+}
+
+
+img{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+
+}
+/*ici c'est pour afficher bonjour*/
+h2{
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ec2207;
+    /*les ajouts*/
+    width: 35%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;  
+    
+}
+/*suite  de l'ajout*/
+@keyframes animate {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%     {
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,80.1%,90%,92.1%,100%
+    {
+        color: #fff;
+        box-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px#03bcf4;
+    }
+    
+}
+
+h4{
+     
+    position: absolute;
+    top: 28%;
+    right: 5%;
+    font-size: 19px;
+    letter-spacing: 2px;
+    width: 500px;
+    text-align: center;
+    color: #d1d1d1;
+    font-weight: 900;
+}
+
+
+
+
+.sign-in, .sign-up{
+    margin-top: 1vh;
+    position: absolute;
+    top: 55%;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ddc700;
+    background: transparent;
+    border-radius: 25px;
+    font-size: #d1d1d1;
+    font-family: "blackchancery";
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.sign-in{
+    right: 20%;
+}
+
+.sign-up{
+    right: 4%;
+}
+
+.sign-in:hover, .sign-up:hover{
+    background-color: #ddc700;
+    color: #000000;
+}
+
+/*ceci c'est pour le contact*/
+
+.social-icons {
+	position: absolute;
+	right: 5%;
+	bottom: 8%;
+}
+
+.social-icons a {
+	padding: 5px;
+	margin-right: 4px;
+}
+
+
+
+
